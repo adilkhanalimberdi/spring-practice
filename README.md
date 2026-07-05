@@ -4,3 +4,4 @@ This repository is dedicated to mastering backend development, API design skills
 | Project | Inpiration |
 | :--- | :--- | 
 | **[Url Shortening Service](https://github.com/adilkhanalimberdi/spring-practice/tree/main/url-shortening-service)** | [View Task](https://roadmap.sh/projects/url-shortening-service) |
+| **[Blogging Platform API](https://github.com/adilkhanalimberdi/spring-practice/tree/main/blogging-platform-api)** | [View Task](https://roadmap.sh/projects/blogging-platform-api) |
