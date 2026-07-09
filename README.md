@@ -7,3 +7,4 @@ This repository is dedicated to mastering backend development, API design skills
 | **[Url Shortening Service](https://github.com/adilkhanalimberdi/spring-practice/tree/main/url-shortening-service)** | [View Task](https://roadmap.sh/projects/url-shortening-service) |
 | **[Personal Blog](https://github.com/adilkhanalimberdi/spring-practice/tree/main/personal-blog)** | [View Task](https://roadmap.sh/projects/personal-blog) |
 | **[Unit Converter](https://github.com/adilkhanalimberdi/spring-practice/tree/main/unit-converter)** | [View Task](https://roadmap.sh/projects/unit-converter) |
+| **[Library Management System](https://github.com/adilkhanalimberdi/spring-practice/tree/main/library-management-system)** | [View Source](https://roadmap.sh/backend) |
