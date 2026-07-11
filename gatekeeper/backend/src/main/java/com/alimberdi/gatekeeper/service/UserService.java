@@ -27,6 +27,12 @@ public class UserService {
 				.orElseThrow(() -> new ResourceNotFoundException("User with id " + id + " not found"));
 	}
 
+	public ProfileResponse getProfile(String username) {
+		return repository.findByUsername(username)
+				.map(UserMapper::toProfileResponse)
+				.orElseThrow(() -> new ResourceNotFoundException("User with username " + username + " not found"));
+	}
+
 	public User getByUsername(String username) {
 		return repository.findByUsername(username)
 				.orElseThrow(() -> new ResourceNotFoundException("User with username " + username + " not found"));
