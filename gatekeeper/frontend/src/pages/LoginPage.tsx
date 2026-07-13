@@ -27,7 +27,7 @@ export default function LoginPage() {
     }
 
     const handleGoogle = () => {
-        console.log("Google");
+        window.location.href = "http://localhost:8080/oauth2/authorization/google?mode=login";
     }
 
     const handleGithub = () => {
@@ -90,7 +90,7 @@ export default function LoginPage() {
                 </div>
 
                 <div className="flex flex-col gap-1 items-center">
-                    <p className="text-slate-700">Or you can sign in with</p>
+                    <p className="text-slate-600">Or you can sign in with</p>
                     <div className="flex flex-row items-center justify-center gap-1">
                         <button id="sign-with-google"
                                 onClick={handleGoogle}

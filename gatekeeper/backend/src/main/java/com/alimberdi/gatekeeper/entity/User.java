@@ -1,5 +1,6 @@
 package com.alimberdi.gatekeeper.entity;
 
+import com.alimberdi.gatekeeper.enums.Provider;
 import com.alimberdi.gatekeeper.enums.UserRole;
 import jakarta.persistence.*;
 import lombok.*;
@@ -36,6 +37,13 @@ public class User {
 	@Column(nullable = false)
 	@Enumerated(EnumType.STRING)
 	private UserRole role;
+
+	@Column(nullable = false)
+	@Enumerated(EnumType.STRING)
+	private Provider provider;
+
+	@Column(nullable = false)
+	private boolean enabled;
 
 	@CreatedDate
 	@Column(nullable = false, updatable = false)

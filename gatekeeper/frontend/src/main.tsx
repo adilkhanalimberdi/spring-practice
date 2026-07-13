@@ -6,6 +6,7 @@ import ProtectedRoute from "./components/ProtectedRoute.tsx";
 import {HomePage} from "./pages/HomePage.tsx";
 import {RegisterPage} from "./pages/RegisterPage.tsx";
 import LoginPage from "./pages/LoginPage.tsx";
+import {OAuth2RedirectHandler} from "./components/OAuth2RedirectHandler.tsx";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -31,6 +32,13 @@ createRoot(document.getElementById('root')!).render(
                   path="/register"
                   element={
                       <RegisterPage />
+                  }
+              />
+
+              <Route
+                  path="/oauth2/redirect"
+                  element={
+                      <OAuth2RedirectHandler />
                   }
               />
 

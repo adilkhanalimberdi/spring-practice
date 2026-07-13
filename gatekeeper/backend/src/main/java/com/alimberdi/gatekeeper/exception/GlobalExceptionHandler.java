@@ -33,6 +33,30 @@ public class GlobalExceptionHandler {
 				.body(response);
 	}
 
+	@ExceptionHandler(VerificationFailedException.class)
+	public ResponseEntity<ErrorResponse> handleVerificationException(VerificationFailedException ex) {
+		ErrorResponse response = new ErrorResponse(
+				HttpStatus.BAD_REQUEST.value(),
+				ex.getMessage()
+		);
+
+		return ResponseEntity
+				.status(HttpStatus.BAD_REQUEST)
+				.body(response);
+	}
+
+	@ExceptionHandler(EmailMessagingFailedException.class)
+	public ResponseEntity<ErrorResponse> handleMessagingException(EmailMessagingFailedException ex) {
+		ErrorResponse response = new ErrorResponse(
+				HttpStatus.BAD_GATEWAY.value(),
+				ex.getMessage()
+		);
+
+		return ResponseEntity
+				.status(HttpStatus.BAD_GATEWAY)
+				.body(response);
+	}
+
 	@ExceptionHandler(ResourceNotFoundException.class)
 	public ResponseEntity<ErrorResponse> handleNotFoundException(ResourceNotFoundException ex) {
 		ErrorResponse response = new ErrorResponse(

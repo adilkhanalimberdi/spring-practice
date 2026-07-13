@@ -30,7 +30,7 @@ export function Navbar() {
     }
 
     return (
-        <div className="flex items-center justify-between p-5 w-full border-b border-slate-200">
+        <div className="fixed flex items-center justify-between p-5 w-full bg-white border-b border-slate-300 drop-shadow-md">
             <div className="flex flex-row gap-2">
                 <p className="text-2xl text-blue-600 font-semibold">Gatekeeper</p>
             </div>
